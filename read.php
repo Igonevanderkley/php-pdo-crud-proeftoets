@@ -36,6 +36,11 @@ foreach ($result as $info) {
                 <td>$info->Networth</td>
                 <td>$info->Age</td>
                 <td>$info->MyCompany</td>
+                <td>
+                <a href='delete.php?Id=$info->Id'>
+                <img src='img/b_drop.png' alt='kruis'>
+            </a>
+        </td>
                 <tr>      
      ";
 }
@@ -59,6 +64,7 @@ foreach ($result as $info) {
         <th>Vermogen</th>
         <th>Leeftijd</th>
         <th>Bedrijf</th>
+        <th></th>
     <t/head>
     <tbody>
         <?= $rows ?>
